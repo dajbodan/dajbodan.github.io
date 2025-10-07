@@ -100,107 +100,89 @@
             color: #586069;
         }
     </style>
-</head><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Dajbov | Portfolio</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-            line-height: 1.6;
-            background-color: #f6f8fa;
-            color: #24292e;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        header {
-            text-align: center;
-            border-bottom: 1px solid #e1e4e8;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 0;
-        }
-        header .subtitle {
-            font-size: 1.1em;
-            color: #586069;
-            max-width: 600px;
-            margin: 10px auto 0 auto;
-        }
-        header .links {
-            margin-top: 15px;
-        }
-        header .links a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #0366d6;
-            font-weight: bold;
-        }
-        .portfolio {
-            background-color: #ffffff;
-            border: 1px solid #e1e4e8;
-            border-radius: 6px;
-            padding: 24px;
-        }
-        .portfolio h2 {
-            font-size: 1.8em;
-            margin-top: 0;
-            border-bottom: 1px solid #e1e4e8;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        .portfolio-section h3 {
-            font-size: 1.4em;
-            color: #0366d6;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        li {
-            margin-bottom: 15px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #f6f8fa;
-        }
-        li:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-        }
-        li strong {
-            font-size: 1.1em;
-            display: block;
-            margin-bottom: 3px;
-        }
-        li a {
-            text-decoration: none;
-            color: #24292e;
-            font-weight: 600;
-        }
-        li a:hover {
-            color: #0366d6;
-            text-decoration: underline;
-        }
-        li .tech {
-            font-size: 0.9em;
-            color: #586069;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #e1e4e8;
-            color: #586069;
-        }
-    </style>
 </head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daniel Dajbov</h1>
+            <p class="subtitle">
+                Computer-science student with a passion for AI. I enjoy applying AI and machine learning methods to challenging problems and bridging the gap between theoretical research and real-world applications.
+            </p>
+            <div class="links">
+                <a href="https://github.com/dajbodan" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/daniel-dajbov-b5617b28a/" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <main class="portfolio">
+            <h2>Portfolio</h2>
+
+            <div class="portfolio-section">
+                <h3>Theoretical Computer Science & Algorithms</h3>
+                <ul>
+                    <li>
+                        <a href="#"><strong>Bachelor's Thesis: Parameterized Algorithms for Min-Power Symmetric Connectivity</strong></a>
+                        Authored a thesis investigating the NP-complete Min-Power Symmetric Connectivity problem, designing novel FPT and XP algorithms based on parameters like vertex cover and neighbourhood diversity.
+                        <div class="tech">Graph Theory, Parameterized Complexity, FPT/XP Algorithms</div>
+                    </li>
+                    <li>
+                        <a href="https://github.com/dajbodan/University/tree/main/8-puzzle-sat-solver"><strong>8-Puzzle SAT Solver</strong></a>
+                        Converted the classic 8-puzzle game into a boolean satisfiability (SAT) problem, allowing generic SAT solvers to find solutions.
+                        <div class="tech">Logic, SAT Solvers</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="portfolio-section">
+                <h3>Compilers & Systems Programming</h3>
+                <ul>
+                    <li>
+                        <a href="https://github.com/dajbodan/University/tree/main/terminal-based%20spreadsheet%20editor"><strong>Terminal-based Spreadsheet Editor</strong></a>
+                        Implemented a command-line parser and preprocessor that tokenizes input and builds an AST. Built an object-oriented AST interpreter with polymorphic classes and developed cycle-detection logic for cell references.
+                        <div class="tech">C++, Compilers, Parsers, AST, LL(1) Grammar</div>
+                    </li>
+                    <li>
+                        <a href="https://github.com/dajbodan/University/tree/main/Autonomous-Robot%20TCP%20Server"><strong>Autonomous-Robot TCP Server</strong></a>
+                        Built a fault-tolerant TCP layer in C++17 with a custom framing parser to handle segmented and coalesced packets.
+                        <div class="tech">C++, Networking, Concurrency</div>
+                    </li>
+                     <li>
+                        <a href="https://github.com/dajbodan/University/tree/main/Multiprocessing%20Semestral%20Work"><strong>Multithreaded Producer-Consumer System</strong></a>
+                        Implemented a producer-consumer model using C++ with mutexes and conditional variables for synchronization.
+                        <div class="tech">C++, Parallel & Distributed Computing (MPI, OpenMP)</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="portfolio-section">
+                <h3>Machine Learning & Data Science</h3>
+                <ul>
+                    <li>
+                        <a href="https://github.com/dajbodan/University/tree/main/neural_networks"><strong>Machine Learning - Kaggle Datasets</strong></a>
+                        Solved various classification and regression tasks. Achieved 92% test accuracy on a 10-class image dataset using a VGG-style CNN.
+                        <div class="tech">Python, PyTorch, Scikit-learn, Pandas, NumPy, CNN, Random Forest, SVM</div>
+                    </li>
+                     <li>
+                        <a href="https://github.com/dajbodan/Fill-in-the-middle-problem"><strong>Fill-in-the-middle Code Gen Benchmark</strong></a>
+                        Developed a Python pipeline to benchmark ML models on C++ "fill in the middle" tasks. Used Tree-sitter to parse C++ source into an AST for automated data extraction.
+                        <div class="tech">Python, Machine Learning, AST, Tree-sitter</div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <div class="languages-section">
+                <h3>Languages</h3>
+                <p>
+                    <strong>Russian:</strong> Fluent | 
+                    <strong>Czech:</strong> Fluent | 
+                    <strong>English:</strong> B2 | 
+                    <strong>German:</strong> B2
+                </p>
+            </div>
+            <p>Daniel Dajbov | danildajbov@gmail.com</p>
+        </footer>
+    </div>
+</body>
 </html>
